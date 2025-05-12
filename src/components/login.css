@@ -53,3 +53,12 @@ button {
 button:hover {
   background: #1e90ff;
 }
+
+.error-message {
+  background: #fee2e2;
+  color: #dc2626;
+  padding: 0.75rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  text-align: center;
+}

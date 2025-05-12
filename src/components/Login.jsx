@@ -1,19 +1,24 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useAuth } from '../context/AuthContext'
 import './login.css'
 
 const Login = () => {
   const [clinic, setClinic] = useState('')
   const [password, setPassword] = useState('')
+  const [error, setError] = useState('')
   const navigate = useNavigate()
+  const { login } = useAuth()
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // Here you can add your authentication logic
+    setError('')
+    
     if (clinic === 'clinic' && password === 'clinic') {
-      navigate('/')
+      login()
+      navigate('/', { replace: true })
     } else {
-      alert('Invalid credentials')
+      setError('Invalid credentials')
     }
   }
 
@@ -26,18 +31,21 @@ const Login = () => {
             <circle cx="12" cy="7" r="4" />
           </svg>
         </div>
+        {error && <div className="error-message">{error}</div>}
         <form onSubmit={handleSubmit}>
           <input
             type="text"
             placeholder="Clinic"
             value={clinic}
             onChange={(e) => setClinic(e.target.value)}
+            required
           />
           <input
             type="password"
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            required
           />
           <button type="submit">LOGIN</button>
         </form>
