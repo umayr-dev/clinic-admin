@@ -6,6 +6,7 @@ import Layout from './components/Layout/Layout'
 import Categories from './components/Categories/Categories'
 import Services from './components/Services/Services'
 import Dashboard from './components/Dashboard/Dashboard'
+import Orders from './components/Orders/Orders'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route index element={<Dashboard />} />
             <Route path="categories" element={<Categories />} />
             <Route path="services" element={<Services />} />
+            <Route path="orders" element={<Orders />} />
           </Route>
         </Routes>
       </Router>

@@ -18,6 +18,7 @@ const Layout = () => {
           <NavLink to="/" end>Dashboard</NavLink>
           <NavLink to="/categories">Categories</NavLink>
           <NavLink to="/services">Services</NavLink>
+          <NavLink to="/orders">Orders</NavLink>
         </div>
         <button className="logout-btn" onClick={handleLogout}>
           Logout
