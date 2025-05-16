@@ -50,3 +50,12 @@ tr:hover {
   background: #fff5f5;
   color: #666;
 }
+
+.orders-list table td div {
+  margin: 4px 0;
+}
+
+.orders-list table td {
+  vertical-align: top;
+  padding: 12px;
+}

@@ -15,13 +15,13 @@ const Layout = () => {
     <div className="layout">
       <nav className="sidebar">
         <div className="nav-links">
-          <NavLink to="/" end>Dashboard</NavLink>
-          <NavLink to="/categories">Categories</NavLink>
-          <NavLink to="/services">Services</NavLink>
-          <NavLink to="/orders">Orders</NavLink>
+          <NavLink to="/" end>Umumiy</NavLink>
+          <NavLink to="/categories">Kategoriyalar</NavLink>
+          <NavLink to="/services">Xizmatlar</NavLink>
+          <NavLink to="/orders">Buyurtmalar</NavLink>
         </div>
         <button className="logout-btn" onClick={handleLogout}>
-          Logout
+          Chiqish
         </button>
       </nav>
       <main className="content">

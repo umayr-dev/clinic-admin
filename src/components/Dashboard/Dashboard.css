@@ -89,6 +89,32 @@
   background: #27ae60;
 }
 
+.summary-stats {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.total-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.total-card h3 {
+  margin: 0 0 10px 0;
+  color: #666;
+}
+
+.total-card p {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
 @media (max-width: 768px) {
   .stats-controls {
     flex-direction: column;
